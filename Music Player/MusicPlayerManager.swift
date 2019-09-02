@@ -13,6 +13,10 @@ protocol  MusicPlayerProtocol {
     func play() ->  Void
     func pause() -> Void
     func nextSong(songFinishedPlaying:Bool) -> Void
+    func getProgress()->Float
+    func getCurrentTrackName() -> String
+    func getCurrentTimeAsString() -> String
+    
 }
 class MusicPlayerManager: NSObject, AVAudioPlayerDelegate, MusicPlayerProtocol {
     
