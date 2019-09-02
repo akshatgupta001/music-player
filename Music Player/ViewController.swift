@@ -8,6 +8,19 @@
 
 import UIKit
 
+class roundBtn : UIButton{
+    
+    required public init?(coder aDecoder: NSCoder) {
+        
+        super.init(coder: aDecoder)
+         self.layer.cornerRadius = self.bounds.height/2
+    
+       
+        
+    }
+    
+}
+
 class ViewController: UIViewController {
     var mp3Player:MusicPlayerManager?
     var timer:Timer?
@@ -15,6 +28,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trackName: UILabel!
     
+    @IBOutlet weak var playBtn: roundBtn!
+    @IBOutlet weak var pauseBtn: roundBtn!
+    @IBOutlet weak var nextBtn: roundBtn!
     override func viewDidLoad() {
         super.viewDidLoad()
         mp3Player = MusicPlayerManager()
