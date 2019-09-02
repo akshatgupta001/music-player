@@ -14,8 +14,8 @@
 		E0F20F0A23183EE90082A512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F20F0823183EE90082A512 /* LaunchScreen.storyboard */; };
 		E0F20F122318439F0082A512 /* MusicPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F20F112318439F0082A512 /* MusicPlayerManager.swift */; };
 		E0F20F15231846980082A512 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F20F14231846980082A512 /* AVFoundation.framework */; };
-		E0F20F17231854CB0082A512 /* Luis Fonsi - Despacito ft. Daddy Yankee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0F20F16231854CB0082A512 /* Luis Fonsi - Despacito ft. Daddy Yankee.mp3 */; };
-		E0F20F19231854E10082A512 /* Imagine Dragons - Believer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0F20F18231854E10082A512 /* Imagine Dragons - Believer.mp3 */; };
+		E0F20F1B231D6FBE0082A512 /* Desiigner kPanda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0F20F1A231D6FBE0082A512 /* Desiigner kPanda.mp3 */; };
+		E0F20F1D231D6FCD0082A512 /* Hozier - Take Me To Church.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0F20F1C231D6FCD0082A512 /* Hozier - Take Me To Church.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		E0F20F0B23183EE90082A512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0F20F112318439F0082A512 /* MusicPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerManager.swift; sourceTree = "<group>"; };
 		E0F20F14231846980082A512 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		E0F20F16231854CB0082A512 /* Luis Fonsi - Despacito ft. Daddy Yankee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Luis Fonsi - Despacito ft. Daddy Yankee.mp3"; path = "../../../../Music/Luis Fonsi - Despacito ft. Daddy Yankee.mp3"; sourceTree = "<group>"; };
-		E0F20F18231854E10082A512 /* Imagine Dragons - Believer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Imagine Dragons - Believer.mp3"; path = "../../../../Music/Imagine Dragons - Believer.mp3"; sourceTree = "<group>"; };
+		E0F20F1A231D6FBE0082A512 /* Desiigner kPanda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Desiigner kPanda.mp3"; path = "../../../../Music/Desiigner kPanda.mp3"; sourceTree = "<group>"; };
+		E0F20F1C231D6FCD0082A512 /* Hozier - Take Me To Church.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Hozier - Take Me To Church.mp3"; path = "../../../../Music/Hozier - Take Me To Church.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 		E0F20EFE23183EE20082A512 /* Music Player */ = {
 			isa = PBXGroup;
 			children = (
-				E0F20F18231854E10082A512 /* Imagine Dragons - Believer.mp3 */,
-				E0F20F16231854CB0082A512 /* Luis Fonsi - Despacito ft. Daddy Yankee.mp3 */,
+				E0F20F1C231D6FCD0082A512 /* Hozier - Take Me To Church.mp3 */,
+				E0F20F1A231D6FBE0082A512 /* Desiigner kPanda.mp3 */,
 				E0F20EFF23183EE20082A512 /* AppDelegate.swift */,
 				E0F20F0123183EE20082A512 /* ViewController.swift */,
 				E0F20F0323183EE20082A512 /* Main.storyboard */,
@@ -149,10 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F20F0A23183EE90082A512 /* LaunchScreen.storyboard in Resources */,
-				E0F20F17231854CB0082A512 /* Luis Fonsi - Despacito ft. Daddy Yankee.mp3 in Resources */,
 				E0F20F0723183EE90082A512 /* Assets.xcassets in Resources */,
-				E0F20F19231854E10082A512 /* Imagine Dragons - Believer.mp3 in Resources */,
 				E0F20F0523183EE20082A512 /* Main.storyboard in Resources */,
+				E0F20F1B231D6FBE0082A512 /* Desiigner kPanda.mp3 in Resources */,
+				E0F20F1D231D6FCD0082A512 /* Hozier - Take Me To Church.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

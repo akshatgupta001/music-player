@@ -9,20 +9,26 @@
 import Foundation
 
 import AVFoundation
-
-class MusicPlayerManager: NSObject, AVAudioPlayerDelegate {
+protocol  MusicPlayerProtocol {
+    func play() ->  Void
+    func pause() -> Void
+    func nextSong(songFinishedPlaying:Bool) -> Void
+}
+class MusicPlayerManager: NSObject, AVAudioPlayerDelegate, MusicPlayerProtocol {
+    
+    
     var player:AVAudioPlayer?
     var currentTrackIndex = 0
     var tracks:[String] = [String]()
     
     override init(){
         
-      //  tracks = Bundle.main.paths(forResourcesOfType: "mp3", inDirectory: nil)
-            tracks = ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-                       "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"]
+            tracks = Bundle.main.paths(forResourcesOfType: "mp3", inDirectory: nil)
+//            tracks = ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+//                       "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"]
         print(tracks)
         super.init()
-        queueTrack();
+       queueTrack();
     }
     
     func queueTrack(){
@@ -30,10 +36,10 @@ class MusicPlayerManager: NSObject, AVAudioPlayerDelegate {
             player = nil
         }
 
-    //   let url = NSURL.fileURL(withPath: tracks[currentTrackIndex] as String)
+       let url = NSURL.fileURL(withPath: tracks[currentTrackIndex] as String)
         
-        let tempURL = URL.init(string: tracks[currentTrackIndex])
-        let songData = NSData(contentsOf: tempURL!)
+       // let tempURL = URL.init(string: tracks[currentTrackIndex])
+        let songData = NSData(contentsOf: url)
         do{
             player = try AVAudioPlayer.init(data: songData! as Data)
         }catch{
